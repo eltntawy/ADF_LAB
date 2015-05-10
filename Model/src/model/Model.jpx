@@ -14,6 +14,14 @@
     <Attr Name="_appModuleNames0" Value="model.AppModule"/>
   </DesignTime>
   <Containee
+    Name="associations"
+    PackageName="associations"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AS" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
     Name="model"
     PackageName="model"
     ObjectType="JboPackage">

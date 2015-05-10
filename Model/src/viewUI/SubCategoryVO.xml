@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SubCategoryVO"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  SelectList="ProductCategoryEO.CATEGORY_DESCRIPTION, 
+       ProductCategoryEO.CATEGORY_ID, 
+       ProductCategoryEO.CATEGORY_LOCKED_FLAG, 
+       ProductCategoryEO.CATEGORY_NAME, 
+       ProductCategoryEO.PARENT_CATEGORY_ID"
+  FromList="PRODUCT_CATEGORIES ProductCategoryEO"
+  Where="ProductCategoryEO.PARENT_CATEGORY_ID IS NOT NULL"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="viewUI.SubCategoryVO_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <EntityUsage
+    Name="ProductCategoryEO"
+    Entity="model.ProductCategoryEO"/>
+  <ViewAttribute
+    Name="CategoryDescription"
+    PrecisionRule="true"
+    EntityAttrName="CategoryDescription"
+    EntityUsage="ProductCategoryEO"
+    AliasName="CATEGORY_DESCRIPTION"/>
+  <ViewAttribute
+    Name="CategoryId"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="CategoryId"
+    EntityUsage="ProductCategoryEO"
+    AliasName="CATEGORY_ID"/>
+  <ViewAttribute
+    Name="CategoryLockedFlag"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="CategoryLockedFlag"
+    EntityUsage="ProductCategoryEO"
+    AliasName="CATEGORY_LOCKED_FLAG"/>
+  <ViewAttribute
+    Name="CategoryName"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="CategoryName"
+    EntityUsage="ProductCategoryEO"
+    AliasName="CATEGORY_NAME"/>
+  <ViewAttribute
+    Name="ParentCategoryId"
+    PrecisionRule="true"
+    EntityAttrName="ParentCategoryId"
+    EntityUsage="ProductCategoryEO"
+    AliasName="PARENT_CATEGORY_ID"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
+</ViewObject>

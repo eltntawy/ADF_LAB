@@ -16,10 +16,58 @@
   <ViewUsage
     Name="OrderItemsView2"
     ViewObjectName="model.OrderItemsView"/>
+  <ViewUsage
+    Name="AddressUsagesView1"
+    ViewObjectName="model.AddressUsagesView"/>
+  <ViewUsage
+    Name="AddressesView1"
+    ViewObjectName="model.AddressesView"/>
+  <ViewUsage
+    Name="LookupCodesView1"
+    ViewObjectName="model.LookupCodesView"/>
+  <ViewUsage
+    Name="PaymentOptionsView1"
+    ViewObjectName="model.PaymentOptionsView"/>
+  <ViewUsage
+    Name="SuppliersView1"
+    ViewObjectName="model.SuppliersView"/>
+  <ViewUsage
+    Name="WarehouseStockLevelsView1"
+    ViewObjectName="model.WarehouseStockLevelsView"/>
+  <ViewUsage
+    Name="WarehousesView1"
+    ViewObjectName="model.WarehousesView"/>
+  <ViewUsage
+    Name="AddressUsagesView2"
+    ViewObjectName="model.AddressUsagesView"/>
+  <ViewUsage
+    Name="WarehousesView2"
+    ViewObjectName="model.WarehousesView"/>
+  <ViewUsage
+    Name="WarehouseStockLevelsView2"
+    ViewObjectName="model.WarehouseStockLevelsView"/>
   <ViewLinkUsage
     Name="OrderItemsOrdersFkLink1"
     ViewLinkObjectName="model.OrderItemsOrdersFkLink"
     SrcViewUsageName="model.AppModule.OrdersView1"
     DstViewUsageName="model.AppModule.OrderItemsView2"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="AddressUsagesAddressesFkLink1"
+    ViewLinkObjectName="model.AddressUsagesAddressesFkLink"
+    SrcViewUsageName="model.AppModule.AddressesView1"
+    DstViewUsageName="model.AppModule.AddressUsagesView2"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="WarehousesAddressesFkLink1"
+    ViewLinkObjectName="model.WarehousesAddressesFkLink"
+    SrcViewUsageName="model.AppModule.AddressesView1"
+    DstViewUsageName="model.AppModule.WarehousesView2"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="WarehouseStockLevelsFkLink1"
+    ViewLinkObjectName="model.WarehouseStockLevelsFkLink"
+    SrcViewUsageName="model.AppModule.WarehousesView1"
+    DstViewUsageName="model.AppModule.WarehouseStockLevelsView2"
     Reversed="false"/>
 </AppModule>
