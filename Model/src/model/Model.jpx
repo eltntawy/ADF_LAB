@@ -6,11 +6,23 @@
   Name="Model"
   Version="12.1.3.10.8"
   SeparateXMLFiles="true"
-  PackageName="model"
-  ExportIntfPackage="">
+  PackageName="model">
   <DesignTime>
     <Attr Name="_jprName" Value="../../Model.jpr"/>
     <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
     <Attr Name="_NamedConnection" Value="FOD"/>
+    <Attr Name="_appModuleNames0" Value="model.AppModule"/>
   </DesignTime>
+  <Containee
+    Name="model"
+    PackageName="model"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+      <Attr Name="_AS" Value="true"/>
+      <Attr Name="_VO" Value="true"/>
+      <Attr Name="_VL" Value="true"/>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
 </JboProject>

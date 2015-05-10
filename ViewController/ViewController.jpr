@@ -70,7 +70,7 @@
       <list n="dependencyList">
          <hash>
             <hash n="dependable">
-               <url n="sourceOwnerURL" path="../ADF Lab 1.jws"/>
+               <url n="sourceOwnerURL" path="../LAB 1.jws"/>
                <url n="sourceURL" path="../Model/Model.jpr"/>
             </hash>
             <value n="recognizerId" v="oracle.jdeveloper.library"/>
@@ -94,7 +94,7 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="ADF Lab 1_ViewController_webapp">
+         <hash n="LAB 1_ViewController_webapp">
             <hash n="appletArchives"/>
             <hash n="appletFiles">
                <value n="autoInclude" v="true"/>
@@ -105,7 +105,7 @@
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
-            <value n="enterpriseAppName" v="ADF Lab 1_ViewController_webapp"/>
+            <value n="enterpriseAppName" v="LAB 1_ViewController_webapp"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -164,18 +164,18 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/ADF Lab 1_ViewController_webapp.war"/>
+            <url n="jarURL" path="deploy/LAB 1_ViewController_webapp.war"/>
             <value n="profileClass" v="oracle.jdeveloper.deploy.war.WarProfile"/>
-            <value n="profileName" v="ADF Lab 1_ViewController_webapp"/>
+            <value n="profileName" v="LAB 1_ViewController_webapp"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="ADF Lab 1_ViewController_webapp"/>
+         <string v="LAB 1_ViewController_webapp"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="ADF-Lab-1-ViewController-webapp"/>
-      <value n="j2eeWebContextRoot" v="ADF-Lab-1-ViewController-context-root"/>
+      <value n="j2eeWebAppName" v="LAB-1-ViewController-webapp"/>
+      <value n="j2eeWebContextRoot" v="LAB-1-ViewController-context-root"/>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
