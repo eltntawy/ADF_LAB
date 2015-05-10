@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AddressUsagesAddressesFkLink"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  EntityAssociation="model.AddressUsagesAddressesFkAssoc">
+  <ViewLinkDefEnd
+    Name="AddressesView"
+    Cardinality="1"
+    Source="true"
+    Owner="model.AddressesView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="AddressesView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.AddressesView.AddressId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="AddressUsagesView"
+    Cardinality="-1"
+    Owner="model.AddressUsagesView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="AddressUsagesView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.AddressUsagesView.AddressId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>
