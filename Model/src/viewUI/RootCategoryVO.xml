@@ -58,6 +58,11 @@
     EntityAttrName="ParentCategoryId"
     EntityUsage="ProductCategoryEO"
     AliasName="PARENT_CATEGORY_ID"/>
+  <ViewLinkAccessor
+    Name="SubCategoryVO"
+    ViewLink="viewUI.RootCategoriesSubCategoriesLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
   <ResourceBundle>
     <PropertiesBundle
       PropertiesFile="model.ModelBundle"/>

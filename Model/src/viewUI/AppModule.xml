@@ -10,4 +10,19 @@
   <ViewUsage
     Name="RootCategoryVO1"
     ViewObjectName="viewUI.RootCategoryVO"/>
+  <ViewUsage
+    Name="SubCategoryVO1"
+    ViewObjectName="viewUI.SubCategoryVO"/>
+  <ViewUsage
+    Name="RootCategoryVO2"
+    ViewObjectName="viewUI.RootCategoryVO"/>
+  <ViewUsage
+    Name="SubCategoryVO2"
+    ViewObjectName="viewUI.SubCategoryVO"/>
+  <ViewLinkUsage
+    Name="RootCategoriesSubCategoriesLink"
+    ViewLinkObjectName="viewUI.RootCategoriesSubCategoriesLink"
+    SrcViewUsageName="viewUI.AppModule.RootCategoryVO2"
+    DstViewUsageName="viewUI.AppModule.SubCategoryVO2"
+    Reversed="false"/>
 </AppModule>

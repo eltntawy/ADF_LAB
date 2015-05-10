@@ -132,9 +132,9 @@
     TableName="ADDRESS_USAGES"/>
   <AccessorAttribute
     Name="Addresses"
-    Association="model.AddressUsagesAddressesFkAssoc"
-    AssociationEnd="model.AddressUsagesAddressesFkAssoc.Addresses"
-    AssociationOtherEnd="model.AddressUsagesAddressesFkAssoc.AddressUsages"
+    Association="associations.AddressUsagesAddressesFkAssoc"
+    AssociationEnd="associations.AddressUsagesAddressesFkAssoc.Addresses"
+    AssociationOtherEnd="associations.AddressUsagesAddressesFkAssoc.AddressUsages"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key
