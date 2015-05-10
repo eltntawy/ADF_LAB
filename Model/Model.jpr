@@ -79,7 +79,7 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="ADF Lab1_Model_adflib">
+         <hash n="ADF Lab 1_Model_adflib">
             <value n="adflib-connectionDetails" v="true"/>
             <value n="adflib-nonReusablesError" v="false"/>
             <hash n="archiveOptions">
@@ -114,19 +114,19 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/ADF Lab1_Model_adflib.jar"/>
+            <url n="jarURL" path="deploy/ADF Lab 1_Model_adflib.jar"/>
             <hash n="LibraryDependencies"/>
             <value n="profileClass" v="oracle.adfdt.common.deploy.impl.AdfLibraryProfile"/>
-            <value n="profileName" v="ADF Lab1_Model_adflib"/>
+            <value n="profileName" v="ADF Lab 1_Model_adflib"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="ADF Lab1_Model_adflib"/>
+         <string v="ADF Lab 1_Model_adflib"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="ADF-Lab1-Model-webapp"/>
-      <value n="j2eeWebContextRoot" v="ADF-Lab1-Model-context-root"/>
+      <value n="j2eeWebAppName" v="ADF-Lab-1-Model-webapp"/>
+      <value n="j2eeWebContextRoot" v="ADF-Lab-1-Model-context-root"/>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
