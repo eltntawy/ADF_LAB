@@ -1,11 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
-   <AppModuleConfigBag ApplicationName="model.AppModule">
-      <AppModuleConfig name="14D3DDEE982" JDBCName="FOD" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.AppModule" DBconnection="java:comp/env/jdbc/FODDS">
-         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" jbo.SQLBuilder="Oracle"/>
-         <Security AppModuleJndiName="model.AppModule"/>
-         <Tester FullProxyInterfaceName="model.common.AppModule"/>
-         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/FODDS" ns0:_testers_credentials_needed="false" ns0:ns0="http://xmlns.oracle.com/bc4j/configuration" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+   <AppModuleConfigBag ApplicationName="viewUI.AppModule">
+      <AppModuleConfig name="14D4296F0C4" DBconnection="java:comp/env/jdbc/FODDS" ApplicationName="viewUI.AppModule" DeployPlatform="LOCAL" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" JDBCName="FOD" BC4JConfigName="AppModuleLocal" jbo.project="model.Model">
+         <Database jbo.TypeMapEntries="OracleApps" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="viewUI.AppModule"/>
+         <Tester FullProxyInterfaceName="viewUI.common.AppModule"/>
+         <Custom ns0:ns0="http://xmlns.oracle.com/bc4j/configuration" ns0:_testers_credentials_needed="false" ns0:JDBCDataSource="java:comp/env/jdbc/FODDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="viewUI.FODCategoryAM">
+      <AppModuleConfig name="14D429B6800" JDBCName="FOD" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="FODCategoryAMLocal" ApplicationName="viewUI.FODCategoryAM" DBconnection="java:comp/env/jdbc/FODDS">
+         <Database jbo.TypeMapEntries="OracleApps" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="viewUI.FODCategoryAM"/>
+         <Tester FullProxyInterfaceName="viewUI.common.FODCategoryAM"/>
+         <Custom ns0:LastUsedConfiguration="FODCategoryAMLocal" ns0:JDBCDataSource="java:comp/env/jdbc/FODDS" ns0:_testers_credentials_needed="false" ns0:ns0="http://xmlns.oracle.com/bc4j/configuration" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
       </AppModuleConfig>
    </AppModuleConfigBag>
 </BC4JConfig>

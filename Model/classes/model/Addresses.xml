@@ -167,9 +167,9 @@
     TableName="ADDRESSES"/>
   <AccessorAttribute
     Name="AddressUsages"
-    Association="model.AddressUsagesAddressesFkAssoc"
-    AssociationEnd="model.AddressUsagesAddressesFkAssoc.AddressUsages"
-    AssociationOtherEnd="model.AddressUsagesAddressesFkAssoc.Addresses"
+    Association="associations.AddressUsagesAddressesFkAssoc"
+    AssociationEnd="associations.AddressUsagesAddressesFkAssoc.AddressUsages"
+    AssociationOtherEnd="associations.AddressUsagesAddressesFkAssoc.Addresses"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute

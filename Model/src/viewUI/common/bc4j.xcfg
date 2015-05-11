@@ -13,4 +13,17 @@
          <Custom ns0:JDBCDataSource="java:comp/env/jdbc/FODDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
       </AppModuleConfig>
    </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="viewUI.FODCategoryAM">
+      <AppModuleConfig name="FODCategoryAMLocal" jbo.project="model.Model" ApplicationName="viewUI.FODCategoryAM" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="viewUI.FODCategoryAM"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/FODDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="FODCategoryAMShared" jbo.project="model.Model" ApplicationName="viewUI.FODCategoryAM" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="viewUI.FODCategoryAM"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/FODDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
 </BC4JConfig>

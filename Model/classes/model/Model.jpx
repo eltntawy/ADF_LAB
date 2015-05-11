@@ -6,12 +6,15 @@
   Name="Model"
   Version="12.1.3.10.8"
   SeparateXMLFiles="true"
-  PackageName="model">
+  PackageName="model"
+  ExportIntfPackage="">
   <DesignTime>
     <Attr Name="_jprName" Value="../../Model.jpr"/>
     <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
     <Attr Name="_NamedConnection" Value="FOD"/>
     <Attr Name="_appModuleNames0" Value="model.AppModule"/>
+    <Attr Name="_appModuleNames1" Value="viewUI.AppModule"/>
+    <Attr Name="_appModuleNames2" Value="viewUI.FODCategoryAM"/>
   </DesignTime>
   <Containee
     Name="associations"
@@ -34,19 +37,17 @@
     </DesignTime>
   </Containee>
   <Containee
-    Name="view"
-    PackageName="view"
-    ObjectType="JboPackage">
-    <DesignTime>
-      <Attr Name="_VO" Value="true"/>
-    </DesignTime>
-  </Containee>
+    Name="module"
+    PackageName="module"
+    ObjectType="JboPackage"/>
   <Containee
     Name="viewUI"
     PackageName="viewUI"
     ObjectType="JboPackage">
     <DesignTime>
       <Attr Name="_VO" Value="true"/>
+      <Attr Name="_AM" Value="true"/>
+      <Attr Name="_VL" Value="true"/>
     </DesignTime>
   </Containee>
 </JboProject>
